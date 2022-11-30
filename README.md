@@ -1,5 +1,5 @@
 ## Persistence and Analytics Fundamentals - Order Details Application
-### mySQL Workbench Query
+### mySQL Query
 
 SELECT
     o.id as order_id,
@@ -26,7 +26,7 @@ use northwind
 3. railway up
 
 use this command to check snapshot.jar
-Do not change the path
+*DO NOT CHANGE THE /APP/TARGET*
 1. mvn package -Dmaven.test.skip=true
 
 ### Populate SQL data
