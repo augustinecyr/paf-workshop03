@@ -1,5 +1,6 @@
 ## Persistence and Analytics Fundamentals - Order Details Application
 ### mySQL Workbench Query
+
 SELECT
     o.id as order_id,
     DATE_FORMAT(o.order_date, "%d/%m/%Y") as order_date,
@@ -17,4 +18,17 @@ WHERE
         AND od.product_id = p.id
 	and o.id = 30
 
-Use northwind db
+use northwind
+
+### Deploying to Railway
+1. railway init
+2. railway login
+3. railway up
+
+use this command to check snapshot.jar
+Do not change the path
+1. mvn package -Dmaven.test.skip=true
+
+### Populate SQL data
+1. copy and run .sql and -data.sql query
+2. use "northwind"
